@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <title>Admine</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <p class="logo"> <span>T-</span>Mihangy </p>
+        <a href="vol.html" class="icon-a"> <i class="fa fa-search icons"></i>&nbsp;&nbsp; Admine</a>
+        <a href="#" class="icon-a"> <i class="fa fa-users icons"></i>&nbsp;&nbsp; Customers</a> 
+        <a href="#" class="icon-a"> <i class="fa fa-list icons"></i>&nbsp;&nbsp; Project</a>
+        <a href="#" class="icon-a"> <i class="fa fa-shopping-bag icons"></i>&nbsp;&nbsp; Orders</a>
+        <a href="#" class="icon-a"> <i class="fa fa-tasks icons"></i>&nbsp;&nbsp; Inventory</a>
+        <a href="#" class="icon-a"> <i class="fa fa-user icons"></i>&nbsp;&nbsp; Account</a>
+        <a href="#" class="icon-a"> <i class="fa fa-list-alt icons"></i>&nbsp;&nbsp; Tasks</a>
+        <a href="map.html" class="icon-a"> <i class="fa fa-map "></i>&nbsp;&nbsp; Maps</a>
+    </div>
+    <div id="main">
+        <div class="head">
+            <div class="col-div-6">
+                <span class="nav" style="font-size: 30px; cursor: pointer; color: white;"> &#9776; Tsipongo</span>
+                <span class="nav2" style="font-size: 30px; cursor: pointer; color: white;"> &#9776; Tsipongo</span>
+            </div>
+            <div class="col-div-6">
+              <div class="profile">
+                <img src="FB_IMG_16720781240674762.jpg" alt="" class="pro-img">
+                <p>Tsipongo Mihangy <span>/ Developpeur</span> </p>
+              </div>
+            </div>
+        <div class="clearfix"></div>
+        <br><br>
+        <hr>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15497674.98708645!2d36.18975691734631!3d-18.50122353903109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2sMadagascar!5e0!3m2!1sfr!2smg!4v1699337514550!5m2!1sfr!2smg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr>
+        <div class="maps">
+            <p>Trouver ici notre <span>localisation</span> </p>
+        </div>
+      
+
+    <script src="jquery-3.6.4.js"></script>
+
+    <script type="text/javascript">
+        $(".nav").click(function(){
+            $("#mySidenav").css('width','70px');
+            $("#main").css('margin-left','70px');
+            $(".logo").css('visibility','hidden');
+            $(".logo span").css('visibility','visible');
+            $(".logo span").css('margin-left','-10px');
+            $(".icon-a").css('visibility','hidden');
+            $(".icons").css('visibility','visible');
+            $(".icons").css('margin-left','-8px');
+            $(".nav").css('display','none');
+            $(".nav2").css('display','block');
+        });
+        $(".nav2").click(function(){
+            $("#mySidenav").css('width','300px');
+            $("#main").css('margin-left','300px');
+            $(".logo").css('visibility','visible');
+            $(".logo span").css('visibility','visible');
+            $(".icon-a").css('visibility','visible');
+            $(".icons").css('visibility','visible');
+            $(".nav").css('display','block');
+            $(".nav2").css('display','none');
+        });
+    </script>
+</body>
+</html>

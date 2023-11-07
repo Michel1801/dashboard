@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <title>Admine</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <p class="logo"> <span>T-</span>Mihangy </p>
+        <a href="index.html" class="icon-a"> <i class="fa fa-search icons"></i>&nbsp;&nbsp; Admine</a>
+        <a href="#" class="icon-a"> <i class="fa fa-users icons"></i>&nbsp;&nbsp; Customers</a> 
+        <a href="#" class="icon-a"> <i class="fa fa-list icons"></i>&nbsp;&nbsp; Project</a>
+        <a href="#" class="icon-a"> <i class="fa fa-shopping-bag icons"></i>&nbsp;&nbsp; Orders</a>
+        <a href="#" class="icon-a"> <i class="fa fa-tasks icons"></i>&nbsp;&nbsp; Inventory</a>
+        <a href="#" class="icon-a"> <i class="fa fa-user icons"></i>&nbsp;&nbsp; Account</a>
+        <a href="#" class="icon-a"> <i class="fa fa-list-alt icons"></i>&nbsp;&nbsp; Tasks</a>
+        <a href="map.html" class="icon-a"> <i class="fa fa-map "></i>&nbsp;&nbsp; Maps</a>
+    </div>
+    <div id="main">
+        <div class="head">
+            <div class="col-div-6">
+                <span class="nav" style="font-size: 30px; cursor: pointer; color: white;"> &#9776; Tsipongo</span>
+                <span class="nav2" style="font-size: 30px; cursor: pointer; color: white;"> &#9776; Tsipongo</span>
+            </div>
+            <div class="col-div-6">
+              <div class="profile">
+                <img src="FB_IMG_16720781240674762.jpg" alt="" class="pro-img">
+                <p>Tsipongo Mihangy <span>/ Developpeur</span> </p>
+              </div>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>67 <br> <span>Customers</span> </p>
+                <i class="fa fa-users box-icon"></i>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>88 <br> <span>Project</span> </p>
+                <i class="fa fa-list box-icon"></i>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>100 <br> <span>Orders</span> </p>
+                <i class="fa fa-shopping-bag box-icon"></i>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>30 <br> <span>Tasks</span> </p>
+                <i class="fa fa-list-alt box-icon"></i>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+        <div class="col-div-8">
+            <div class="box-8">
+                <div class="content-box">
+                    <p>Top Selling projects <span>View All</span></p>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Concact</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>Futur</td>
+                            <td>0331402099</td>
+                            <td>MADAGASCAR</td>
+                        </tr>
+                        <tr>
+                            <td>Leader</td>
+                            <td>0348924129</td>
+                            <td>FRANCE</td>
+                        </tr>
+                        <tr>
+                            <td>Truem</td>
+                            <td>0340857615</td>
+                            <td>COMORE</td>
+                        </tr> 
+                        <tr>
+                            <td>BeT</td>
+                            <td>0389078654</td>
+                            <td>CANADA</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-div-4">
+            <div class="box-4">
+                <div class="content-box">
+                    <p>Total Sale <span>View All</span></p>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full">
+                                <div class="fill">
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill">
+                                    </div>
+                                    <div class="inside-circle">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <script src="jquery-3.6.4.js"></script>
+
+    <script type="text/javascript">
+        $(".nav").click(function(){
+            $("#mySidenav").css('width','70px');
+            $("#main").css('margin-left','70px');
+            $(".logo").css('visibility','hidden');
+            $(".logo span").css('visibility','visible');
+            $(".logo span").css('margin-left','-10px');
+            $(".icon-a").css('visibility','hidden');
+            $(".icons").css('visibility','visible');
+            $(".icons").css('margin-left','-8px');
+            $(".nav").css('display','none');
+            $(".nav2").css('display','block');
+        });
+        $(".nav2").click(function(){
+            $("#mySidenav").css('width','300px');
+            $("#main").css('margin-left','300px');
+            $(".logo").css('visibility','visible');
+            $(".logo span").css('visibility','visible');
+            $(".icon-a").css('visibility','visible');
+            $(".icons").css('visibility','visible');
+            $(".nav").css('display','block');
+            $(".nav2").css('display','none');
+        });
+    </script>
+</body>
+</html>
